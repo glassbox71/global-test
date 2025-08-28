@@ -1,0 +1,277 @@
+/* 공통사항 */
+/* 모든 요소의 여백 제거하기 */
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd{
+    margin:0;
+    padding:0;
+}
+/* list앞에 장식 제거하기 */
+li{
+    list-style:none;
+}
+
+/* a */
+a{
+    color:#333;
+    text-decoration:none;
+}
+
+/* body */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13px;
+    color:#333;
+    font-weight: 400;
+}
+
+/* img */
+img{
+    vertical-align: middle;
+}
+
+.center{
+    width:1400px;
+    margin:0 auto;
+    background-color:rgba(255,0,0,0.3);
+}
+
+/* header */
+header{
+    background-color:beige;
+    position:relative;
+    z-index: 1000;
+}
+
+.headTop{
+    border-bottom:1px solid #e4e4e4;
+    padding:10px 0;
+}
+.headTop>.center::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.sns{
+    background-color:skyblue;
+    float:right;
+    margin-left:30px;
+}
+.sns>li{
+    float:left;
+    margin-left:16px;
+}
+.etc{
+    background-color:greenyellow;
+    float:right;
+}
+.etc>li{
+    float:left;
+    margin-left:15px;
+    position:relative;
+    padding-right: 15px;
+}
+.etc>li:first-child::after{
+    content:"";
+    display:block;
+    width:1px;
+    height:10px;
+    background:red;
+    position:absolute;
+    top:5px;
+    right:0;
+}
+
+/* headBottom */
+.headBottom{
+    padding:14px 0;
+}
+.headBottom>.center::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.logo{
+    float:left;
+}
+
+#nav{
+    float:left;
+    margin-left:80px;
+}
+#nav>li{
+    float:left;
+}
+#nav>li>a{
+    display:block;
+    font-size:18px;
+    background:yellow;
+    padding:10px 30px 12px;
+
+}
+
+.subWrap{
+    display: none;
+    position:absolute;
+    background:#006ecd;
+    width:100%;
+    left:0;
+}
+.subWrap>.sub{
+    width:1000px;
+    background:yellowgreen;
+    margin:0 auto;
+    overflow: hidden;
+}
+.subWrap>.sub>li{
+    float:left;
+    line-height: 50px;
+    margin-left:20px;
+    background-color:orange;
+    position:relative;
+    padding-right:20px;
+}
+.subWrap>.sub>li::after{
+    content:"";
+    display: block;
+    width:1px;
+    height:10px;
+    background:red;
+    position:absolute;
+    top:50%;
+    right:0;
+}
+.subWrap>.sub>li:last-child::after{
+    display: none;;
+}
+
+.subWrap>.sub>li>a{
+    color:white;
+    font-size:17px;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+}
+
+
+
+#nav>li:hover .subWrap{
+    display: block;
+}
+
+
+
+.multiLink{
+    float:right;
+}
+.multiLink>li{
+    float:left;
+    margin-left:30px;
+}
+.multiLink>li>a{
+    display: block;
+    width:30px;
+    padding-top:30px;
+    background-repeat:no-repeat;
+    background-position:center 0;
+
+}
+.multiLink>li:first-child>a{
+    background-image: url(../images/icon_lang.png);
+}
+.multiLink>li:last-child>a{
+    background-image: url(../images/icon_search.png);
+}
+
+
+
+/* mainBanner */
+.mainBanner{
+    height:439px;
+    background:url(../images/main_visualbg.png) center 0 no-repeat;
+}
+
+.banner{
+    width:50%;
+    height:100%;
+    float:left;
+    position:relative;
+}
+.banner>li{
+    position:absolute;
+    border:1px solid white;
+    top:30px;
+    right:80px;
+    padding:20px;
+}
+.banner>li>a{
+    display: block;
+}
+.banner>li img{
+    width:100%;
+}
+.textBox{
+    width:50%;
+    height:100%;
+    background-color:rgba(0, 110, 205, 0.7);
+    float:left;
+    padding:80px 40px;
+    box-sizing: border-box;
+    position:relative;
+}
+.textBox li:last-child{
+    display: none;
+}
+.textBox h2{
+    font-size:37px;
+    color:white;
+    width:550px;
+    word-break: keep-all;
+}
+.textBox h2::before{
+    content:"";
+    display: block;
+    width:100px;
+    height:1px;
+    background:white;
+    margin-bottom:20px;
+}
+.textBox .moreBtn{
+    position:absolute;
+    bottom:50px;
+    left:40px;
+}
+.textBox .moreBtn>a{
+    color:white;
+    font-size:18px;
+    border:1px solid white;
+    padding:10px 40px;
+}
+
+/* 본문 */
+.board{
+    background:green;
+    padding-top:50px;
+}
+.board::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.board>div{
+    width:430px;
+    float:left;
+}
+.board>.liveWrap{
+    margin:0 55px;
+}
+
+.board>div .title{
+    font-size:23px;
+    color:#222;
+    margin-bottom:20px;
+    font-weight: 400;
+}
+
+
+
+
+
